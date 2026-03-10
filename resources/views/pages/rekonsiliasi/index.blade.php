@@ -109,7 +109,7 @@
 
         <div class="table-responsive">
             <table class="table table-bordered">
-                <thead class="bg-light">
+                <thead class="bg-primary text-white">
                     <tr>
                         <th>No</th>
                         <th>SKPD</th>

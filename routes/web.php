@@ -36,6 +36,8 @@ Route::middleware(['auth', 'role:admin'])
     ->group(function () {
         Route::resource('users', UserController::class);
         Route::resource('skpd', SkpdController::class);
+        Route::post('periode/generate', [PeriodeController::class, 'generate'])
+            ->name('periode.generate');
         Route::resource('periode', PeriodeController::class);
         Route::resource('rekening', RekeningController::class);
 });
